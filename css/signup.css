@@ -1,0 +1,20 @@
+
+body{
+    background-image: linear-gradient(to right, rgb(177, 111, 182), rgba(46, 46, 46, 0.411));
+    height: 100%;
+}
+
+.box{
+    background-color: white;
+    border-radius: 10px;
+    width: 75%;
+    margin-left: 12.5%;
+    height: 504px;
+    margin-top: 78px;
+}
+
+.left{
+    background-color: rgb(183, 82, 190);
+    width:50%;
+    height: 504px;
+}

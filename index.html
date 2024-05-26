@@ -1,0 +1,100 @@
+<!DOCtype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/main.css"/>
+        <link rel="stylesheet" href="css/all.min.css" >
+        <link rel="stylesheet" href="css/fontawesome.min.css" >
+        <link rel="icon" type="png" href="img/logo.png" />
+        <title>Encore</title>
+    </head>
+    <body>
+        <div class="box">
+            <div class="left">
+                <img src="img/displayImg1.jpg" class="displayImg"/>
+                
+            </div>
+            <div class="right" id="right">
+                <div class="signin" id="signin">
+                <div class="top">
+                    <img src="img/logo.png" alt="logo" class="logo" />
+
+                    <div class="toggle">
+                        <div class="toggle-btn">
+                            *
+                        </div>
+                    </div>
+                </div><br>
+                <hr>
+
+                <h3 class="greets">We missed you! &#128532, Sign in so we can get you back on track!</h3>
+                <p class="small-text"> Don't have an account?, <a onclick="switchdown()">sign up here</a></p>
+                <hr class="hrtwo">
+                
+                <table>
+                <tr><input type="text" placeholder="Enter your email" class="email" id="emailbox"/></tr>
+                <tr><i class="fa fa-question-circle empty-field" id="emptyE" style="font-weight: lighter; "></i></tr>
+                </table>
+                <table>
+                <input type="password" placeholder="Password" class="password" id="passbox"/>
+                <tr><i class="fa fa-question-circle empty-field" id="emptyP" style="font-weight: lighter; "></i></tr>
+                </table>
+
+                <button class="login" onclick="login()" id="login">Log in</button><br>
+                <a href="#" class="forgot">Forgot password</a>
+                <hr class="hrthree">
+
+                <table>
+                    <tr><button class="uno">Sign in with Google <i class="fab fa-google"></i></button></tr>
+                    <tr><button class="sign"><span title="Log in with Facebook"><i class="fab fa-facebook-f"></i></span></button></tr>
+                    <tr><button class="sign"><span title="Log in with Apple"><i class="fab fa-apple"></i></span></button></tr>
+                </table>
+                </div>
+                <div class="signup" id="signup">
+                    <div class="top">
+                        <img src="img/logo.png" alt="logo" class="logo" />
+
+                        <div class="toggle">
+                            <div class="toggle-btn">
+                            *
+                            </div>
+                        </div>
+                    </div><br>
+                    <hr>
+                    <h3 class="greets">Welcome to Encore! &#128525, Sign up now for a wonderful experience!</h3>
+                    <p class="small-text"> Already have an account?, <a onclick="switchup()">sign in here</a></p>
+                    <hr class="hrtwo">
+                    
+                    <table>
+                    <tr><input type="text" placeholder="Enter your email" class="email" id="emailbox"/></tr>
+                    <tr><i class="fa fa-question-circle empty-field" id="emptyE" style="font-weight: lighter; "></i></tr>
+                    </table>
+                    <table>
+                    <input type="password" placeholder="Password" class="password" id="passbox"/>
+                    <tr><i class="fa fa-question-circle empty-field" id="emptyP" style="font-weight: lighter; "></i></tr>
+                    </table>
+                    <table>
+                    <input type="password" placeholder="Confirm Password" class="password" id="passbox"/>
+                    <tr><i class="fa fa-question-circle empty-field" id="emptyP" style="font-weight: lighter; "></i></tr>
+                    </table>
+
+                    <button class="login" onclick="" id="signup">Sign up</button><br>
+
+                    <table>
+                        <tr ><button style="margin-left: 25%;" class="altsign"><span title="Sign up with Google"><i class="fab fa-google"></i>
+                        </span></button></tr>
+                        <tr><button class="altsign"><span title="Sign up with Facebook"><i class="fab fa-facebook-f"></i></span></button></tr>
+                        <tr><button class="altsign"><span title="Sign up with Apple"><i class="fab fa-apple"></i></span></button></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="loadUI" id="loadUI">
+            <div class="loadContent" id = "loadContent" >
+               <p> No internet connection detected <span class = 'fa fa-window-close' style="color:rgb(235, 81, 81)"></span> </p>
+            </div>
+        </div>
+
+
+    </body>
+    <script src="login.js"></script>
+</html>
