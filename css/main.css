@@ -1,3 +1,16 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Light.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Poppins-bold;
+    src: url(../fonts/Poppins-Bold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body{
     background-image: linear-gradient(rgb(177, 111, 182), white );
@@ -7,7 +20,7 @@ body{
 }
 
 i{
-    font-size: 20px;
+    font-size: 1.46vw;
     color: white;
 }
 
@@ -43,7 +56,7 @@ i{
     display: none;
 }
 .slideup{
-    transform: translateY(-650px);
+    transform: translateY(-100%);
 }
 
 .slidedown{
@@ -71,7 +84,7 @@ i{
 
 .logo-text{
     color:rgb(177, 111, 182);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:Poppins;
     font-weight: bold;
     margin-left: 7%;
     height: 6.9%;
@@ -80,7 +93,6 @@ i{
 .toggle{
     width:7.63%;
     height:25px;
-    background-color:rgba(58, 57, 57, 0.247);
     border-radius: 15px;
     cursor: pointer;
     float: right;
@@ -98,31 +110,24 @@ i{
 hr{
     margin-top: 12.1%;;
     color: blue;
-    width:80%
+    width:80%;
 }
 
 .greets{
     color: white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Poppins;
     margin-left: 10%;
     margin-right: 10%;
-    font-weight: normal
-}
-
-@media only screen and (max-height: 450){
-    .greets{
-        display: none;
-    }
-    .toggle-btn{
-        display: none;
-    }
+    font-weight: normal;
+    font-size:1.3vw;
 }
 
 .small-text{
     color:white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Poppins;
     margin-left: 10%;
     margin-right: 10%;
+    font-size:1.3vw;
 }
 
 a{
@@ -142,10 +147,11 @@ a{
     width: 61%;
     border: 0px solid rgb(235, 81, 81);
     border-radius: 10px;
-    font-size: 13px;
+    font-size: 1.03vw;
     background-color:rgba(58, 57, 57, 0.247);
     color:white;
     transition: 0.4s;
+    font-family: Poppins;
     
 }
 
@@ -168,10 +174,11 @@ a{
     width:61%;
     border: 0px solid rgb(235, 81, 81);
     border-radius: 10px;
-    font-size: 13px;
+    font-size: 1.03vw;
     background-color:rgba(58, 57, 57, 0.247);
     color:white;
     transition: 0.4s;
+    font-family: Poppins;
 }
 
 .password:focus{
@@ -196,13 +203,15 @@ a{
     border: 0px solid rgb(177, 111, 182);
     border-radius: 10px;
     padding: 3px;
-    width: 61%;
+    width: 64%;
     height: 7.2%;
     cursor: pointer;
     margin-left: 10%;
-    margin-top: 7.2%;
+    margin-top: 4.2%;
     transition: 0.4s;
     color:white;
+    font-family: Poppins;
+    font-size: 1.2vw;
 }
 
 .login:hover{
@@ -219,11 +228,11 @@ a{
 }
 
 .forgot{
-    margin-top: 12%;
+    margin-top: 15%;
     text-decoration: none;
-    margin-left: 33.7%;
-    font-family: Tahoma, sans-serif;
-    font-size: 0.9em;
+    margin-left: 52%;
+    font-family: Poppins;
+    font-size: 1.2vw;
 }
 
 .forgot:hover{
@@ -246,6 +255,7 @@ a{
     cursor:pointer;
     margin-top: 5%;
     color:white;
+    font-size: 1.1vw;
 }
 
 .sign{
@@ -282,18 +292,28 @@ a{
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-/*.loadContent{
-    margin-left: 43%;
-    margin-top: 15%;
-    border: 0px solid rgba(0, 0, 0, 0.4);
-    border-top: 5px solid rgba(255, 255, 255, 0.8);
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
-}*/
-
 .loadContent{
+    margin-left: 20%;
+    margin-top: 9%;
+    border: 0px solid rgba(0, 0, 0, 0.4);
+    width: 60%;
+    height: 60%;
+    background-color: white;
+    animation: swoop 1s linear forwards;
+    animation-timing-function: ease-out;
+    display: none;
+}
+
+@keyframes swoop{
+    0% { margin-top: -2% ;}
+    100% {margin-top: 9%;}
+}
+
+/*.loadPage p{
+    display: none;
+}
+
+/*.loadPage{
     border: 0px solid rgba(0, 0, 0, 0.4);
     width: 600px;
     height: 40px;
@@ -319,3 +339,176 @@ a{
     0% { margin-top: -30px ;}
     100% {margin-top: 50px;}
 }
+*/
+
+.recover{
+    background-color: rgb(177, 111, 182);
+    width: 100;
+    height: 100%;
+    box-shadow: 0 10px 12px 0 rgba(32, 32, 32, 0.247), 0 6px 20px 0 rgba(31, 30, 30, 0.247);
+}
+
+.recover-close{
+    background-color: transparent;
+    border: 0px solid black;
+    float: right;
+    color:white;
+    margin-right: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.recover p{
+    color: rgb(247, 233, 248);
+}
+
+.recFor{
+    font-family: Poppins-bold;
+    font-size: 1.83vw;
+    margin-top: -25px;
+    margin-left: 50px;
+}
+
+.recEma{
+    font-family: Poppins;
+    font-size: 1.19vw;
+    margin-left: 50px;
+    font-weight: bold;
+    margin-top: -15px;
+}
+
+.forgot-message{
+    font-family: Poppins;
+    margin-left: 50px;
+    margin-top: -15px;
+    font-size: 1.1vw;
+}
+
+.email-forgot{
+    font-family: Poppins;
+    background-color: rgb(132, 81, 133);
+    color: white;
+    margin-left: 50px;
+    margin-top: 0px;
+    width: 55%;
+    height: 30px;
+    border: 0px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 0.88vw;
+}
+
+.email-forgot::placeholder{
+    color:rgba(255, 255, 255, 0.486);
+    font-size: 1.10vw;
+    margin-left: 10px;
+}
+
+.email-forgot:focus{
+    outline: none;
+}
+
+.timer{
+    margin-left: 10px;
+    margin-top: 3px;
+    font-family: Poppins;
+    color:rgba(228, 227, 227, 0.671);
+    font-size: 1.1vw;
+    opacity: 0%;
+}
+
+.for-code{
+    width: 15%;
+    background-color: rgb(69, 43, 70);
+    margin-left: 50px;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 0px solid black;
+    cursor: pointer;
+    font-family: Poppins;
+    color:white;
+    transition: 0.4s;
+}
+
+
+.for-code:hover{
+    background-color:rgba(58, 57, 57, 0);
+    transform: scale(1.05);
+    border: 1px solid rgb(82, 52, 83);
+
+}
+
+.right-menu{
+    width: 26%;
+    float: right;
+    height: 100%;
+    animation: slip 0.6s linear forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes slip {
+    0% {margin-right: -30%}
+    100% {margin-right: 0%;}
+}
+
+.right-menu-close{
+    background-color: transparent;
+    border: 0px solid black;
+    float: right;
+    color:white;
+    margin-right: 8.45%;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.menu-text{
+    font-family: Poppins-bold;
+    width: 100%;
+    font-size: 1.83vw;
+    margin-top: -25px;
+    margin-left: 0px;
+    cursor: pointer;
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px ;
+    transition: 0.4s;
+}
+
+
+
+.menu-text:hover{
+    background-color: rgba(82, 52, 83, 0.651);
+}
+
+.rights{
+    margin-top: 58%;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 0.73vw;
+}
+
+/*.loadPage p{
+    display: none;
+}
+
+.loadPage{
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    border-top: 5px;
+    width: 60px;
+    height: 60px;
+    color:white;
+    border-radius: 50%;
+    margin-left: 28%;
+    animation: spin 2s linear infinite  ;
+}
+
+@keyframes spin{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes swoop{
+    0% { margin-top: -30px ;}
+    100% {margin-top: 50px;}
+}*/

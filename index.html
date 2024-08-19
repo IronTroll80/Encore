@@ -18,15 +18,11 @@
                 <div class="top">
                     <img src="img/logo.png" alt="logo" class="logo" />
 
-                    <div class="toggle">
-                        <div class="toggle-btn">
-                            *
-                        </div>
-                    </div>
+                    <span title="Settings" id="menu"><i class="fa fa-bars toggle"></i></span>
                 </div><br>
                 <hr>
 
-                <h3 class="greets">We missed you! &#128532, Sign in so we can get you back on track!</h3>
+                <p class="greets">We missed you! &#128532, Sign in so we can get you back on track!</p>
                 <p class="small-text"> Don't have an account?, <a onclick="switchdown()">sign up here</a></p>
                 <hr class="hrtwo">
                 
@@ -38,13 +34,13 @@
                 <input type="password" placeholder="Password" class="password" id="passbox"/>
                 <tr><i class="fa fa-question-circle empty-field" id="emptyP" style="font-weight: lighter; "></i></tr>
                 </table>
+                <a href="#" class="forgot"  id="forgot">Forgot password</a><br>
 
                 <button class="login" onclick="login()" id="login">Log in</button><br>
-                <a href="#" class="forgot">Forgot password</a>
                 <hr class="hrthree">
 
                 <table>
-                    <tr><button class="uno">Sign in with Google <i class="fab fa-google"></i></button></tr>
+                    <tr><button class="uno"><i class="fab fa-google"></i> Sign in with Google </button></tr>
                     <tr><button class="sign"><span title="Log in with Facebook"><i class="fab fa-facebook-f"></i></span></button></tr>
                     <tr><button class="sign"><span title="Log in with Apple"><i class="fab fa-apple"></i></span></button></tr>
                 </table>
@@ -53,11 +49,8 @@
                     <div class="top">
                         <img src="img/logo.png" alt="logo" class="logo" />
 
-                        <div class="toggle">
-                            <div class="toggle-btn">
-                            *
-                            </div>
-                        </div>
+                        
+                    <span title="Settings" id="menu"><i class="fa fa-bars toggle"></i></span>
                     </div><br>
                     <hr>
                     <h3 class="greets">Welcome to Encore! &#128525, Sign up now for a wonderful experience!</h3>
@@ -90,7 +83,31 @@
         </div>
         <div class="loadUI" id="loadUI">
             <div class="loadContent" id = "loadContent" >
-               <p> No internet connection detected <span class = 'fa fa-window-close' style="color:rgb(235, 81, 81)"></span> </p>
+                <div class="recover">
+                    <button class="recover-close" id="close"><i class="fa fa-window-close" style="font-size: 35px;"></i></p></button><br>
+                    <p class="recFor" style="margin-top: 70px;">Forgot password</p>
+    <p class="forgot-message" style="margin-top: -25px; color:rgba(255, 255, 255, 0.808)">Forgot your password?, no panic, we've got you!</p><br>
+                   
+                    <p class="recEma">Enter your email</p>
+                    <p class="forgot-message" style="color:rgba(255, 255, 255, 0.808)">We'll send you a recovery code to get your account back</p>
+                        <input type="email" class="email-forgot" placeholder="johndoe@gmail.com"/>
+                        <span class="timer" id="timer"></span><br>
+                    <button class="for-code" id="sendCode">Send code</button>
+                </div>
+            </div>
+            <div class="right-menu" id="rightMenu">
+                <div class="recover">
+                    <button class="right-menu-close" id="closeX"><i class="fa fa-window-close" style="font-size: 35px;"></i></p></button><br>
+                    <p class="menu-text" style="margin-top: 100px; ">Home</p>
+                    <p class="menu-text">Log in/Sign up</p>
+                    <p class="menu-text">Pricing</p>
+                    <p class="menu-text">About Encore &#8482</p>
+
+                    <p class = 'rights'>Encore 2024 &#169, All rights reserved <p>
+                </div>
+            </div>
+            <div class="loadPage" id = "loadPage">
+
             </div>
         </div>
 
