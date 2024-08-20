@@ -649,7 +649,7 @@ body{
 
 
 .loadUI{
-    display:block;
+    display:none;
     position: fixed;
     top: 0%;
     left: 0%;
